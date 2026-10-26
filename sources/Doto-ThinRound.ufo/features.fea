@@ -1,48 +1,124 @@
 #> languagesystem
 languagesystem DFLT dflt;
 languagesystem latn dflt;
+languagesystem cyrl dflt;
+languagesystem cyrl RUS;
 #< languagesystem
 
 
 
-@GDEF_Simple = [\space \exclam \quotedbl \numbersign \dollar \percent \ampersand 
-	\quotesingle \parenleft \parenright \asterisk \plus \comma \hyphen \period 
-	\slash \zero \one \two \three \four \five \six \seven \eight \nine \colon \semicolon 
-	\less \equal \greater \question \at \A \B \C \D \E \F \G \H \I \J \K \L \M \N \O \P \Q \R \S \T 
-	\U \V \W \X \Y \Z \bracketleft \backslash \bracketright \asciicircum \underscore 
-	\grave \a \b \c \d \e \f \g \h \i \j \k \l \m \n \o \p \q \r \s \t \u \v \w \x \y \z \braceleft \bar 
-	\braceright \asciitilde \uni00A0 \exclamdown \cent \sterling \yen \section 
-	\dieresis \copyright \ordfeminine \guillemotleft \registered \macron \degree 
-	\acute \paragraph \periodcentered \cedilla \ordmasculine \guillemotright 
-	\questiondown \Agrave \Aacute \Acircumflex \Atilde \Adieresis \Aring \AE 
-	\Ccedilla \Egrave \Eacute \Ecircumflex \Edieresis \Igrave \Iacute \Icircumflex 
-	\Idieresis \Eth \Ntilde \Ograve \Oacute \Ocircumflex \Otilde \Odieresis 
-	\multiply \Oslash \Ugrave \Uacute \Ucircumflex \Udieresis \Yacute \Thorn 
-	\germandbls \agrave \aacute \acircumflex \atilde \adieresis \aring \ae \ccedilla 
-	\egrave \eacute \ecircumflex \edieresis \igrave \iacute \icircumflex \idieresis 
-	\eth \ntilde \ograve \oacute \ocircumflex \otilde \odieresis \divide \oslash 
-	\ugrave \uacute \ucircumflex \udieresis \yacute \thorn \ydieresis \Amacron 
-	\amacron \Abreve \abreve \Aogonek \aogonek \Cacute \cacute \Cdotaccent 
-	\cdotaccent \Ccaron \ccaron \Dcaron \dcaron \Dcroat \dcroat \Emacron \emacron 
-	\Edotaccent \edotaccent \Eogonek \eogonek \Ecaron \ecaron \Gbreve \gbreve 
-	\Gdotaccent \gdotaccent \uni0122 \uni0123 \Hbar \hbar \Imacron \imacron \Iogonek 
-	\iogonek \Idotaccent \dotlessi \uni0136 \uni0137 \Lacute \lacute \uni013B 
-	\uni013C \Lcaron \lcaron \Lslash \lslash \Nacute \nacute \uni0145 \uni0146 
-	\Ncaron \ncaron \Ohungarumlaut \ohungarumlaut \OE \oe \Racute \racute \Rcaron 
-	\rcaron \Sacute \sacute \Scedilla \scedilla \Scaron \scaron \Tcaron \tcaron 
-	\Umacron \umacron \Uring \uring \Uhungarumlaut \uhungarumlaut \Uogonek \uogonek 
-	\Wcircumflex \wcircumflex \Ycircumflex \ycircumflex \Ydieresis \Zacute \zacute 
-	\Zdotaccent \zdotaccent \Zcaron \zcaron \uni0218 \uni0219 \uni021A \uni021B 
-	\uni0237 \circumflex \caron \breve \dotaccent \ring \ogonek \tilde \hungarumlaut 
-	\gravecomb \acutecomb \uni0302 \tildecomb \uni0304 \uni0306 \uni0307 \uni0308 
-	\uni030A \uni030B \uni030C \uni0326 \uni0327 \uni0328 \Wgrave \wgrave \Wacute 
-	\wacute \Wdieresis \wdieresis \uni1E9E \Ygrave \ygrave \endash \emdash 
-	\quoteleft \quoteright \quotesinglbase \quotedblleft \quotedblright 
-	\quotedblbase \bullet \ellipsis \guilsinglleft \guilsinglright \Euro 
+@GDEF_Simple = [\space \exclam \quotedbl \numbersign \dollar \percent \ampersand
+	\quotesingle \parenleft \parenright \asterisk \plus \comma \hyphen \period
+	\slash \zero \one \two \three \four \five \six \seven \eight \nine \colon \semicolon
+	\less \equal \greater \question \at \A \B \C \D \E \F \G \H \I \J \K \L \M \N \O \P \Q \R \S \T
+	\U \V \W \X \Y \Z \bracketleft \backslash \bracketright \asciicircum \underscore
+	\grave \a \b \c \d \e \f \g \h \i \j \k \l \m \n \o \p \q \r \s \t \u \v \w \x \y \z \braceleft \bar
+	\braceright \asciitilde \uni00A0 \exclamdown \cent \sterling \yen \section
+	\dieresis \copyright \ordfeminine \guillemotleft \registered \macron \degree
+	\acute \paragraph \periodcentered \cedilla \ordmasculine \guillemotright
+	\questiondown \Agrave \Aacute \Acircumflex \Atilde \Adieresis \Aring \AE
+	\Ccedilla \Egrave \Eacute \Ecircumflex \Edieresis \Igrave \Iacute \Icircumflex
+	\Idieresis \Eth \Ntilde \Ograve \Oacute \Ocircumflex \Otilde \Odieresis
+	\multiply \Oslash \Ugrave \Uacute \Ucircumflex \Udieresis \Yacute \Thorn
+	\germandbls \agrave \aacute \acircumflex \atilde \adieresis \aring \ae \ccedilla
+	\egrave \eacute \ecircumflex \edieresis \igrave \iacute \icircumflex \idieresis
+	\eth \ntilde \ograve \oacute \ocircumflex \otilde \odieresis \divide \oslash
+	\ugrave \uacute \ucircumflex \udieresis \yacute \thorn \ydieresis \Amacron
+	\amacron \Abreve \abreve \Aogonek \aogonek \Cacute \cacute \Cdotaccent
+	\cdotaccent \Ccaron \ccaron \Dcaron \dcaron \Dcroat \dcroat \Emacron \emacron
+	\Edotaccent \edotaccent \Eogonek \eogonek \Ecaron \ecaron \Gbreve \gbreve
+	\Gdotaccent \gdotaccent \uni0122 \uni0123 \Hbar \hbar \Imacron \imacron \Iogonek
+	\iogonek \Idotaccent \dotlessi \uni0136 \uni0137 \Lacute \lacute \uni013B
+	\uni013C \Lcaron \lcaron \Lslash \lslash \Nacute \nacute \uni0145 \uni0146
+	\Ncaron \ncaron \Ohungarumlaut \ohungarumlaut \OE \oe \Racute \racute \Rcaron
+	\rcaron \Sacute \sacute \Scedilla \scedilla \Scaron \scaron \Tcaron \tcaron
+	\Umacron \umacron \Uring \uring \Uhungarumlaut \uhungarumlaut \Uogonek \uogonek
+	\Wcircumflex \wcircumflex \Ycircumflex \ycircumflex \Ydieresis \Zacute \zacute
+	\Zdotaccent \zdotaccent \Zcaron \zcaron \uni0218 \uni0219 \uni021A \uni021B
+	\uni0237 \circumflex \caron \breve \dotaccent \ring \ogonek \tilde \hungarumlaut
+	  \uni0302 \tildecomb \uni0304  \uni0307
+	\uni030A \uni030B \uni030C \uni0326 \uni0327 \uni0328 \Wgrave \wgrave \Wacute
+	\wacute \Wdieresis \wdieresis \uni1E9E \Ygrave \ygrave \endash \emdash
+	\quoteleft \quoteright \quotesinglbase \quotedblleft \quotedblright
+	\quotedblbase \bullet \ellipsis \guilsinglleft \guilsinglright \Euro
 	\trademark \minus ];
 
 table GDEF {
-  GlyphClassDef @GDEF_Simple, , , ;
-
+  GlyphClassDef @GDEF_Simple, , [gravecomb acutecomb uni0306 uni0308], ;
 } GDEF;
 
+# BEGIN RUSSIAN
+markClass gravecomb <anchor 250 750> @RU_TOP;
+markClass acutecomb <anchor 250 750> @RU_TOP;
+markClass uni0306 <anchor 250 750> @RU_TOP;
+markClass uni0308 <anchor 250 750> @RU_TOP;
+feature mark {
+  pos base uni0401 <anchor 250 950> mark @RU_TOP;
+  pos base uni0410 <anchor 250 850> mark @RU_TOP;
+  pos base uni0411 <anchor 250 850> mark @RU_TOP;
+  pos base uni0412 <anchor 250 850> mark @RU_TOP;
+  pos base uni0413 <anchor 250 850> mark @RU_TOP;
+  pos base uni0414 <anchor 250 850> mark @RU_TOP;
+  pos base uni0415 <anchor 250 850> mark @RU_TOP;
+  pos base uni0416 <anchor 250 850> mark @RU_TOP;
+  pos base uni0417 <anchor 250 850> mark @RU_TOP;
+  pos base uni0418 <anchor 250 850> mark @RU_TOP;
+  pos base uni0419 <anchor 250 950> mark @RU_TOP;
+  pos base uni041A <anchor 250 850> mark @RU_TOP;
+  pos base uni041B <anchor 250 850> mark @RU_TOP;
+  pos base uni041C <anchor 250 850> mark @RU_TOP;
+  pos base uni041D <anchor 250 850> mark @RU_TOP;
+  pos base uni041E <anchor 250 850> mark @RU_TOP;
+  pos base uni041F <anchor 250 850> mark @RU_TOP;
+  pos base uni0420 <anchor 250 850> mark @RU_TOP;
+  pos base uni0421 <anchor 250 850> mark @RU_TOP;
+  pos base uni0422 <anchor 250 850> mark @RU_TOP;
+  pos base uni0423 <anchor 250 850> mark @RU_TOP;
+  pos base uni0424 <anchor 250 850> mark @RU_TOP;
+  pos base uni0425 <anchor 250 850> mark @RU_TOP;
+  pos base uni0426 <anchor 250 850> mark @RU_TOP;
+  pos base uni0427 <anchor 250 850> mark @RU_TOP;
+  pos base uni0428 <anchor 250 850> mark @RU_TOP;
+  pos base uni0429 <anchor 250 850> mark @RU_TOP;
+  pos base uni042A <anchor 250 850> mark @RU_TOP;
+  pos base uni042B <anchor 250 850> mark @RU_TOP;
+  pos base uni042C <anchor 250 850> mark @RU_TOP;
+  pos base uni042D <anchor 250 850> mark @RU_TOP;
+  pos base uni042E <anchor 250 850> mark @RU_TOP;
+  pos base uni042F <anchor 250 850> mark @RU_TOP;
+  pos base uni0430 <anchor 250 650> mark @RU_TOP;
+  pos base uni0431 <anchor 250 750> mark @RU_TOP;
+  pos base uni0432 <anchor 250 650> mark @RU_TOP;
+  pos base uni0433 <anchor 250 650> mark @RU_TOP;
+  pos base uni0434 <anchor 250 650> mark @RU_TOP;
+  pos base uni0435 <anchor 250 650> mark @RU_TOP;
+  pos base uni0436 <anchor 250 650> mark @RU_TOP;
+  pos base uni0437 <anchor 250 650> mark @RU_TOP;
+  pos base uni0438 <anchor 250 650> mark @RU_TOP;
+  pos base uni0439 <anchor 250 750> mark @RU_TOP;
+  pos base uni043A <anchor 250 650> mark @RU_TOP;
+  pos base uni043B <anchor 250 650> mark @RU_TOP;
+  pos base uni043C <anchor 250 650> mark @RU_TOP;
+  pos base uni043D <anchor 250 650> mark @RU_TOP;
+  pos base uni043E <anchor 250 650> mark @RU_TOP;
+  pos base uni043F <anchor 250 650> mark @RU_TOP;
+  pos base uni0440 <anchor 250 650> mark @RU_TOP;
+  pos base uni0441 <anchor 250 650> mark @RU_TOP;
+  pos base uni0442 <anchor 250 650> mark @RU_TOP;
+  pos base uni0443 <anchor 250 650> mark @RU_TOP;
+  pos base uni0444 <anchor 250 650> mark @RU_TOP;
+  pos base uni0445 <anchor 250 650> mark @RU_TOP;
+  pos base uni0446 <anchor 250 650> mark @RU_TOP;
+  pos base uni0447 <anchor 250 650> mark @RU_TOP;
+  pos base uni0448 <anchor 250 650> mark @RU_TOP;
+  pos base uni0449 <anchor 250 650> mark @RU_TOP;
+  pos base uni044A <anchor 250 650> mark @RU_TOP;
+  pos base uni044B <anchor 250 650> mark @RU_TOP;
+  pos base uni044C <anchor 250 650> mark @RU_TOP;
+  pos base uni044D <anchor 250 650> mark @RU_TOP;
+  pos base uni044E <anchor 250 650> mark @RU_TOP;
+  pos base uni044F <anchor 250 650> mark @RU_TOP;
+  pos base uni0451 <anchor 250 750> mark @RU_TOP;
+  pos base uni20BD <anchor 250 650> mark @RU_TOP;
+  pos base uni2116 <anchor 250 650> mark @RU_TOP;
+} mark;
